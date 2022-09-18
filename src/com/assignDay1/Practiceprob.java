@@ -21,11 +21,12 @@ public class Practiceprob {
         System.out.println("Static String default variable: "+c);// Static variable default value
         System.out.println("Static Boolean default variable: "+m);// Static variable default value
 
-
+        System.out.println("");
+        System.out.println("");
         String s1 = "abcabc";// Two string comparison problem
         String s2 = "abcabc";
 
-        if (s1 == s2){
+        if (s1.equals(s2) ){
             System.out.println("Strings are same");
         }
         else{
