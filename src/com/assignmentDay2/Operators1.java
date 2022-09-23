@@ -3,6 +3,26 @@ package com.assignmentDay2;
 import java.util.Scanner;
 
 public class Operators1 {
+    static int max(int a,int b,  int c,int d) {
+        int max = a;
+        if (b > max)
+            max = b;
+        if (c > max)
+            max = c;
+        if (d > max)
+            max = d;
+        return max;
+    }
+     static int min(int a, int b, int c, int d) {
+        int min = a;
+        if (b < min)
+            min = b;
+        if (c < min)
+            min = c;
+        if (d < min)
+            min = d;
+        return min;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a: ");
@@ -17,9 +37,10 @@ public class Operators1 {
         int y = a%b+c;
         int z = a*b+c;
 
-        System.out.println(w);
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
+
+        System.out.println("Max is " + max(w,x,y,z));
+        System.out.println("Min is " + min(w,x,y,z));
+
+
     }
 }
