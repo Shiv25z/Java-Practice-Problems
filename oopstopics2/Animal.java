@@ -12,7 +12,7 @@ public class Animal {
     public static void main(String[] args) {
         Cat obj = new Cat(5);
         obj.run(4);
-        obj.
+
 
     }
 }
@@ -20,14 +20,14 @@ public class Animal {
 class Cat extends Animal{
 
     void run(int n){
-        super.eat("Fish");
+        super.eat("Fish");// super to invoke parent class method.
         System.out.println("Runs on "+n);
     }
     void eat(String s){
         System.out.println(" Cat Eats :"+s);
     }
      Cat(int a){
-        super();
+        super();// super to call parent constructor
          System.out.println("Cat Class is created" +a);
      }
 }
